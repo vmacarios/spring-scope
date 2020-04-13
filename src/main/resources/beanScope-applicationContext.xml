@@ -15,11 +15,11 @@
 
     <!-- Define the dependency -->
     <bean id="myFortune"
-            class="com.macarios.springdemo.HappyFortuneService" scope="singleton">
+            class="com.macarios.springdemo.HappyFortuneService">
     </bean>
 
     <bean id="myCoach"
-            class="com.macarios.springdemo.TrackCoach">
+            class="com.macarios.springdemo.TrackCoach" scope="prototype">
         <!-- Set up constructor injection -->
         <constructor-arg ref="myFortune"/>
     </bean>
