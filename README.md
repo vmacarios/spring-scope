@@ -1,4 +1,4 @@
-# spring-scope
+# Spring Base
 This example shows how to configure the bean scope in the Spring XML configuration file
 
 MyLoggerConfig defines the Spring log level. In this case, it's set as FINE.
@@ -12,6 +12,7 @@ each bean will be created in different memory position.
 ---
 
 **Bean Lifecycle**
+
 Container Started > Bean Instantiated > Dependencies Injected > Internal Spring Processing >
 Custom Init Method(Hook) > Bean Ready For Use > Custom Destroy Method(Hook) > STOP
 
